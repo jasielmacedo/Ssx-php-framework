@@ -12,11 +12,11 @@ $config['useragent'] = 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:17.0) Gecko/20100
 
 $ch = curl_init();
 
-curl_setopt($ch,CURLOPT_URL,"http://gateway.skyjaz.com/");
+curl_setopt($ch,CURLOPT_URL,"http://locahost/ssx/");
 
 curl_setopt($ch, CURLOPT_USERAGENT, $config['useragent']);
 
-curl_setopt($ch, CURLOPT_REFERER, 'http://gateway.skyjaz.com/ssxpages/edit');
+curl_setopt($ch, CURLOPT_REFERER, 'http://locahost/ssx/ssxpages/edit');
 
 $dir = dirname(__FILE__);
 
@@ -40,8 +40,8 @@ $headers[] = 'Accept-Language: en-US,en;q=0.5';
 $headers[] = 'Content-Length:'.strlen($data_url);
 $headers[] = 'Content-Type: application/x-www-form-urlencoded; charset=utf-8';
 $headers[] = 'X-Requested-With: XMLHttpRequest';
-$headers[] = 'Host: gateway.skyjaz.com';
-$headers[] = 'Origin: http://gateway.skyjaz.com';
+$headers[] = 'Host: locahost';
+$headers[] = 'Origin: http://locahost/ssx/';
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch,CURLOPT_HEADER,0);
