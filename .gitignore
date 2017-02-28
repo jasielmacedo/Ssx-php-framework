@@ -5,6 +5,9 @@
 .buildpath
 .vagrant/
 Vagrantfile
-core/cache/templates_c
+core/cache/templates_c/*
+core/storage/cache/*
+core/storage/logs/*
+core/storage/session/*
 logs/access_log
 logs/error_log
