@@ -71,7 +71,7 @@ Create any pages you want inside this folder.
 
 
 Application - Creating and Using Commom Classes
-----------------------------------------
+-----------------------------------------------
 
 1. 	Create a new php file called **ClassDesired.php** inside **project/control/**
 
@@ -97,7 +97,103 @@ $ClassDesired->DoSomething();
 ```
 
 This is it. Simple and easy.
+This method can be used to acces inside or outside your page.
 
+
+Application - Creating and Using Database Table Classes
+-----------------------------------------------
+
+1. 	Create a new php file called **ClassDesired.php** inside **project/control/**
+
+2. 	Create a syntax class. You'll need to extend to SsxModels class to access database
+
+3.  Inside your class put some informations about your table from database
+
+```
+<?php
+class ClassDesired extends SsxModels
+{
+	// full table name
+	public $table_name = "table_example";
+	
+	// will be used internally to create JOIN between tables
+	public $prefix = "TE";
+	
+	// fields from this table
+	// you'll need to set the type of your field
+	// Available types: int, string and datetime
+	public $fields = array(
+		'id'=>'int',
+		'date_created'>'datetime',
+		'name'=>'string',
+		'email'=>'string',
+		'priority'=>'int',
+		'status'=>'int'
+	);
+}
+```
+
+4. Now your class is ready to access database
+
+### To save/edit data###
+
+To Access inside your pages. Open **yourpage.php** inside **project/modules/YourModule/**
+```
+<?php
+
+$ClassDesired = new ClassDesired();
+
+```
+
+To save data you can use
+
+```
+$id = null; // if you want to edit or non-autoincrement add ID info.
+
+$arrayData = array(
+	'id'=>$id,
+	'name'=>'Jasiel',
+	'email'=>'jasiel@email.com',
+	'priority'=>1,
+	'status'=>1
+);
+
+// return the saved/generated id
+$savedID = $ClassDesired->saveValues($values,$generate_guid=true /* only if you want to use GUI on your IDs */, $editing_check=true /* if true. will be executed UPDATE sql query if primary key is not NULL or EMPTY*/);
+```
+
+### To List data###
+
+* Simple list
+```
+$dataToFilter = array(
+	'email'=>'jasiel@email.com'
+);
+
+$result = $ClassDesired->filterData($dataToFilter, $one=false /* if true will return the first result and nothing more*/);
+```
+
+* Complex list
+
+```
+$dataToFilter = array(
+	'AND'=>array(
+		array(
+			'field'=>'name'
+			'compare'=>'LIKE'
+			'value'=>'%Jasi%'
+		)
+	)
+);
+
+$orderby  = "name";
+$ordersort = "ASC";
+$limitResult = 10; // 0 is equal no limits
+$page = 0; // To paginate your results
+
+
+$result = $ClassDesired->fetch($dataToFilter, $orderby, $ordersort, $limitResult, $page);
+```
 	
 Security - Admin Additional Changes
 -----------------------------------
@@ -133,3 +229,5 @@ Some messages is localized in portuguese. I'll change that soon.
 
 All erros messages does not trigger any kind of Exception but you can find all errors in your errors_log.
 The idea is change this in the future to improve debugs.
+
+And finally: My english is horrible, i know! Sorry for that!
