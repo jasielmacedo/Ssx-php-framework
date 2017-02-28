@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Google Analytics Plugin</name>
+	<description>
+		Plugin de inserção do google analytics no site.
+	</description>
+	<settings>
+		<main src="analytics" />
+	</settings>
+</plugin>

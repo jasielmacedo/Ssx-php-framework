@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Facebook Connect Plugin</name>
+	<description>
+		Plugin se conecta ao facebook, e solicita permissões que serão usadas na aplicação.<br />
+		Para alterar os dados do facebook, entre nas configurações do Plugin e informe os dados corretamente
+	</description>
+	<settings>
+		<main src="FacebookConnect" />
+	</settings>
+</plugin>

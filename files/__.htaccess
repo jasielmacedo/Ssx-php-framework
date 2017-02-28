@@ -1,0 +1,7 @@
+# BEGIN Ssx
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !\.(ico|js|gif|jpeg|jpg|png|css|swf|flv)$ index.html
+</IfModule>
+# END Ssx

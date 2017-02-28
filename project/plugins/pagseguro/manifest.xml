@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Pagamentos - Pagseguro</name>
+	<description>
+		Ativa o serviço de pagamentos pelo pagseguro
+	</description>
+	<settings>
+		<main src="pagseguro" />
+	</settings>
+</plugin>

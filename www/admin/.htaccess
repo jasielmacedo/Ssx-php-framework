@@ -1,0 +1,8 @@
+# BEGIN Ssx
+<IfModule mod_rewrite.c>
+		RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteRule ^([^./]+)\.(php|htm|tpl|txt|inc|ini)$ /index.php
+		RewriteRule !\.(ico|js|gif|jpeg|jpg|png|css|swf|flv|woff|ttf|svg|eot|map)$ index.php
+</IfModule>
+# END Ssx

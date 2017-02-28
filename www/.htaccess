@@ -1,0 +1,29 @@
+# BEGIN Ssx
+DirectoryIndex index.php
+
+<IfModule mod_php5.c>
+############################################
+## adjust memory limit
+    php_value memory_limit 256M
+    php_value max_execution_time 18000
+	
+    php_flag magic_quotes_gpc off
+    php_flag session.auto_start off
+    #php_flag zlib.output_compression on
+</IfModule>
+
+<IfModule mod_rewrite.c>
+		RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteRule ^([^./]+)\.(php|htm|tpl|txt|inc|ini)$ /index.php
+		RewriteRule !\.(ico|js|gif|jpeg|jpg|png|css|swf|flv|woff|ttf|svg|eot|map)$ index.php
+</IfModule>
+
+## cache de 24 horas para os arquivos
+<FilesMatch ".(gif|jpg|jpeg|png|ico|swf|js|css|pdf|woff|ttf|svg|eot|map)$">
+	<IfModule mod_headers.c>
+		Header set Cache-Control "max-age=28800"
+		Header set Access-Control-Allow-Origin "*"
+	</IfModule>
+</FilesMatch>
+# END Ssx

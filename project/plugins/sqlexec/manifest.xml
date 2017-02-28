@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Sql Exec Plugin</name>
+	<description>
+		Plugin para execução de comandos SQL avulsos
+	</description>
+	<settings>
+		<main src="sqlexec" />
+	</settings>
+</plugin>
