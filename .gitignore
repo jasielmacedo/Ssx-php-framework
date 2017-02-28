@@ -1,0 +1,10 @@
+.DS_STORE
+.dropbox
+.project
+.settings/
+.buildpath
+.vagrant/
+Vagrantfile
+core/cache/templates_c
+logs/access_log
+logs/error_log
