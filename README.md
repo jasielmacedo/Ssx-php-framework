@@ -30,6 +30,75 @@ These steps below is like any php application but pay attention for details like
 	user: administrator and password: 123456
 	Change this password as soon as possible. Seriously.
 	
+	
+Application - Creating Pages
+----------------------------
+
+This framework uses [Smarty PHP](http://www.smarty.net/) to compile views but dont worry about that.
+
+The base concept to create page is Module/Action
+Each module have your own actions. For example:
+
+**yourdomain.com/category/create**
+
+By default you have module home and action index 
+if you access **yourdomain.com/** this action will be called.
+
+######Create a new page######
+
+For example: lets create **yourdomain.com/contact**
+
+1.	Open **project/modules/Home** folder and create an empty php file called **contact.php**
+
+2. 	Inside **project/modules/Home/templates/** create a new file called **contact.tpl**. 
+	_.tpl extension will be your html file_
+
+3.	Access **yourdomain.com/contact** you will see **Access denied** because the framework have ACL control and you'll need to give for the guests permission to access this page.
+
+4. 	Open **yourdomain.com/admin** (login required). Access **yourdomain.com/ssxacl/edit** or use navigation menu to "Access permission". Change the access group to **guest** and allow the access.
+
+Done. Now your page is working
+
+######Creating new module######
+
+The process is the same. Duplicate **projects/modules/Home** folder and rename to your desired **module**
+
+Create any pages you want inside this folder.
+
+**_Remember: For each page you create you'll need to change Access permission to work._**
+
+* _The framework creates automatic Routes and generate permalinks based on your module/action_
+
+
+Application - Creating and Using Commom Classes
+----------------------------------------
+
+1. 	Create a new php file called **ClassDesired.php** inside **project/control/**
+
+2. 	Create a syntax class
+
+```
+<?php
+class ClassDesired
+{
+	public function DoSomething()
+	{
+		//do something
+	}
+}
+```
+
+3.	To Access inside your pages. Open **yourpage.php** inside **project/modules/YourModule/**
+```
+<?php
+
+$ClassDesired = new ClassDesired();
+$ClassDesired->DoSomething();
+```
+
+This is it. Simple and easy.
+
+	
 Security - Admin Additional Changes
 -----------------------------------
 
