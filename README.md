@@ -58,7 +58,7 @@ Additional Notes
 ----------------
 
 A lot of programmers loves **composer** except me and because of that the Ssx framework does not have external dependences.
-Like i said on the beginning this framework have a mission to help programmers to create easily and fastest web application.
+Like i said on the beginning this framework is to help programmers to create easily and fastest web application.
 
 Some messages is localized in portuguese. I'll change that soon.
 
