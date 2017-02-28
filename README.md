@@ -8,7 +8,7 @@ Installation
 
 These steps below is like any php application but pay attention for details like startup folder"
 
-1.  Copy all files on step back from your domain folder
+1.  Copy all files one step back from your domain folder
 	If your domain runs on **www/** or **http/** paste all files on the same folder not inside these folders. 
 
 2.  To edit database data you'll need to execute **files/hash.php** on apache to generate encrypt database information
