@@ -82,7 +82,7 @@ class SsxRecovery
 			$statement = Ssx::$link->prepare("INSERT INTO `ssx_config` VALUES('".SsxUtils::guid()."','".$project_id."',NOW(), '".$admin_id."',NOW(), '".$admin_id."','".SsxConfig::SSX_DATA_SET."','".serialize($data_config)."')");
 			Ssx::$link->cmd($statement);
 			
-			die("Itens de banco de dados instalados. Recarregue a pagina para continuar");
+			die("Database updated. Refresh this page to continue");
 		}
 	}
 	
