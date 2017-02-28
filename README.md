@@ -30,8 +30,8 @@ These steps below is like any php application but pay attention for details like
 	user: administrator and password: 123456
 	Change this password as soon as possible. Seriously.
 	
-Security Notes
---------------
+Security - Admin Additional Changes
+-----------------------------------
 
 In first instance your admin folder is opened to public access but you can change that.
 Follow these steps for your own risk.
