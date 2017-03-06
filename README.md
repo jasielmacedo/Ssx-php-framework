@@ -1,4 +1,4 @@
-# README #
+# SSX PHP FRAMEWORK #
 A php framework to help programmers like me to create web applications easy and fast
 
 **Ssx is compatible with PHP 5.4 or newer**
@@ -8,7 +8,7 @@ Installation
 
 These steps below is like any php application but pay attention for details like startup folder"
 
-1.  Copy all files one step back from your domain folder
+1.  Copy all files one step back from your domain folder.
 	If your domain runs on **www/** or **http/** paste all files on the same folder not inside these folders. 
 
 2.  To edit database acces you'll need to execute **files/hash.php** on apache/nginx to generate encrypted database information.
@@ -26,7 +26,7 @@ These steps below is like any php application but pay attention for details like
 
 7. 	Execute your domain. You'll see this message: **Database updated. Refresh this page to continue** and your application is almost ready.
 
-8.  Now you'll need to set access permission on admin. Access **yourdomain/admin/**
+8.  Now you'll need to set access permission on admin. Access **yourdomain/admin/**.
 	user: administrator and password: 123456
 	Change this password as soon as possible. Seriously.
 	
@@ -36,7 +36,7 @@ Application - Creating Pages
 
 This framework uses [Smarty PHP](http://www.smarty.net/) to compile views but dont worry about that.
 
-The base concept to create page is Module/Action
+The base concept to create page is Module/Action.
 Each module have your own actions. For example:
 
 **yourdomain.com/category/create**
@@ -44,7 +44,7 @@ Each module have your own actions. For example:
 By default you have module home and action index 
 if you access **yourdomain.com/** this action will be called.
 
-######Create a new page######
+###Create a new page###
 
 For example: lets create **yourdomain.com/contact**
 
@@ -59,15 +59,15 @@ For example: lets create **yourdomain.com/contact**
 
 Done. Now your page is working
 
-######Creating new module######
+###Creating new module###
 
-The process is the same. Duplicate **projects/modules/Home** folder and rename to your desired **module**
+The process is the same. Duplicate **projects/modules/Home** folder and rename to your desired **module**.
 
 Create any pages you want inside this folder.
 
 **_Remember: For each page you create you'll need to change Access permission to work._**
 
-* _The framework creates automatic Routes and generate permalinks based on your module/action_
+* _The framework creates automatic Routes and generate permalinks based on your module/action._
 
 
 Application - Creating and Using Commom Classes
