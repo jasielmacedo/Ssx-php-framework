@@ -1,17 +1,17 @@
 **Ssx is currently deprecated since 2015**
-I've used and evolved this framework since 2010 but now i'm move forward for a new language.
+	I've used and evolved this framework since 2010 but now i'm move forward for a new language.
 
 # SSX PHP FRAMEWORK #
-A php framework to help programmers like me to create web applications easy and fast
+	A php framework to help programmers like me to create web applications easy and fast
 
 **Ssx is compatible with PHP 5.4 or newer**
 
 Php Dependencies
 ------------
-Php GD
-Php Mcrypt (deprecated)
-Php MB String
-Php PDO
+	Php GD
+	Php Mcrypt (deprecated)
+	Php MB String
+	Php PDO
 
 Installation
 ------------
