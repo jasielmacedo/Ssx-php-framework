@@ -1,6 +1,6 @@
 **Ssx is currently deprecated since 2015**
 
-I've used and evolved this framework since 2010 but now i'm move forward for a new language.
+I've used and evolved this framework since 2010 but now i've moved forward for a new language.
 
 # SSX PHP FRAMEWORK #
 	A php framework to help programmers like me to create web applications easy and fast
