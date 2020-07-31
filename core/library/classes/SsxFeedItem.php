@@ -35,7 +35,7 @@ class SsxFeedItem
 	 * @param $pubDate DATETIME exatamente no formato do Banco de Dados
 	 * @param $link string url para o item
 	 */
-	public function SsxFeedItem($title, $description, $pubDate, $link,$author)
+	public function __construct($title, $description, $pubDate, $link,$author)
 	{
 		$this->title = $title;
 		$this->description = $description;

@@ -12,7 +12,7 @@ class SsxUtils
 {
 	public static $phpass;
 	
-	public function SsxUtils()
+	public function __construct()
 	{
 		require_once COREPATH . "library/brain/PasswordHash.php";
 		

@@ -42,7 +42,7 @@ class SsxEditConstruct
 	 */
 	private $active_protect = false;
 	
-	public function SsxEditConstruct($args, $protect = false)
+	public function __construct($args, $protect = false)
 	{
 		if(!is_array($args))
 			die(SSX_EDIT_CONSTRUCT_ERROR_00);

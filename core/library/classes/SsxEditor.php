@@ -26,7 +26,7 @@ class SsxEditor
 	
 	public $required = false;
 	
-	public function SsxEditor()
+	public function __construct()
 	{
 		$this->editor_uri = PROJECTLOWPATH . "resources/tinymce/tinymce.min.js";
 

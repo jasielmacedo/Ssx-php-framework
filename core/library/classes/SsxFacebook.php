@@ -30,7 +30,7 @@ class SsxFacebook
 	
 	const FB_IMAGE = "https://graph.facebook.com/";
 	
-	public function SsxFacebook($args)
+	public function __construct($args)
 	{
 		 if(!class_exists('Facebook'))
  			require (RESOURCEPATH . "facebook/facebook.php");

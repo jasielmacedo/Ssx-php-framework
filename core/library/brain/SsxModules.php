@@ -148,7 +148,7 @@ class SsxModules
 	 */
 	private $_disable_footer = false;
 
-	public function SsxModules()
+	public function __construct()
 	{		
 		require_once(RESOURCEPATH . "smarty/libs/Smarty.class.php");
 		

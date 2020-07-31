@@ -21,7 +21,7 @@ class SsxSessionLog extends SsxModels
 		'status'=>'string'
 	);
 	
-	public function SsxSessionLog()
+	public function __construct()
 	{
 		parent::super();
 	}

@@ -51,7 +51,7 @@ class SsxProtect
 	 * @param int $timeout
 	 * @param bool $hashField
 	 */
-	public function SsxProtect($timeout=300, $hashField=false, $local="default", $checkReferer = true)
+	public function __construct($timeout=300, $hashField=false, $local="default", $checkReferer = true)
 	{
 		$this->timeout = (int)$timeout;
 		$this->random_field = $hashField;

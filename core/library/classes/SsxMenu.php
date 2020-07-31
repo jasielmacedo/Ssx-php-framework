@@ -38,7 +38,7 @@ class SsxMenu extends SsxModels
 	
 	public $prefix = "MN";
 	
-	public function SsxMenu()
+	public function __construct()
 	{
 		parent::super();
 	}

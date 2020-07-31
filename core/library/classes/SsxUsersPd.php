@@ -22,7 +22,7 @@ class SsxUsersPd extends SsxModels
 	
 	public $primary_key = "user_id";
 	
-	public function SsxUsersPd()
+	public function __construct()
 	{
 		parent::super();
 	}

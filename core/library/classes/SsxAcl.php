@@ -29,7 +29,7 @@ class SsxAcl extends SsxModels
 	
 	public static $rules;
 	
-	public function SsxAcl()
+	public function __construct()
 	{
 		parent::super();
 	}

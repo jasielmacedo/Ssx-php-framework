@@ -25,7 +25,7 @@ class SsxUserToken extends SsxModels
 		'used'=>'int'
 	);
 	
-	public function SsxUserToken()
+	public function __construct()
 	{
 		parent::super();
 	}

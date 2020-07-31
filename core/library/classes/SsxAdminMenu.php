@@ -20,7 +20,7 @@ class SsxAdminMenu
 	
 	public $enabled = true;
 	
-	public function SsxAdminMenu(){
+	public function __construct(){
 		
 		$this->menus = array();
 		$this->sublinks = array();

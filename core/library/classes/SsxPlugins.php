@@ -32,7 +32,7 @@ class SsxPlugins extends SsxModels
 		'active'=>'int'
 	); 
 	
-	public function SsxPlugins()
+	public function __construct()
 	{ 
 		// necessário, pois essa classe inicia junto com a classe main do Ssx
 		parent::super();

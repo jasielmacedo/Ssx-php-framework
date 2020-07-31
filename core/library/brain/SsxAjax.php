@@ -17,7 +17,7 @@ class SsxAjax
 	private $returnData;
 	private $errors;
 	
-	public function SsxAjax($_data, $_function,$_callback, $_output)
+	public function __construct($_data, $_function,$_callback, $_output)
 	{
 		if(is_array($_data))
 			$this->data = $_data;

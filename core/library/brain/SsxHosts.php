@@ -15,10 +15,11 @@ class SsxHosts
 	public $type;
 	public $port;
 	
-	public function SsxHosts(&$_user, &$_pass, &$_host, &$_database, &$_type,$_port="3306",&$keypair)
+	public function __construct(&$_user, &$_pass, &$_host, &$_database, &$_type,$_port="3306",&$keypair)
 	{
+		
 		if(!$keypair)
-			die('SSX HOSTS: Impossivel conectar sem a chave'); 
+			throw new Exception('SSX HOSTS: Impossivel conectar sem a chave'); 
 		
 		$this->user = trim(SsxProtect::decrypt($_user, $keypair)); 
 		$this->pass = trim(SsxProtect::decrypt($_pass, $keypair)); 

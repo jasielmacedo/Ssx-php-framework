@@ -22,7 +22,7 @@ class SsxTags extends SsxModels
 	);
 	
 	
-	public function SsxTags()
+	public function __construct()
 	{
 		parent::super();
 	}

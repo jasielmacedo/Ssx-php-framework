@@ -29,7 +29,7 @@ class SsxPages extends SsxModels
 		'status'=>'int'
 	);
 	
-	public function SsxPages()
+	public function __construct()
 	{
 		parent::super();
 	}

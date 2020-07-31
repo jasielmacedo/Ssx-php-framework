@@ -9,7 +9,7 @@ class SsxGoogleChart
 {
 	private $charts;
 	
-	public function SsxGoogleChart()
+	public function __construct()
 	{
 		
 		 Ssx::$themes->add_head_content("

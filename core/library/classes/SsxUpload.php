@@ -21,7 +21,7 @@ class SsxUpload extends SsxModels
 	 * @param string $dir
 	 * @param bool $autocomplete
 	 */
-	public function SsxUpload($dir, $autocomplete=true)
+	public function __construct($dir, $autocomplete=true)
 	{
 
 		if($autocomplete)

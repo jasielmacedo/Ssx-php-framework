@@ -15,18 +15,24 @@
  */
 Ssx::$project = 1;
 
+
+
 /**
- * Define os dados de banco
- * @var string
+ * Gerar configurações no files/hash.php
  */
 $this->ssx_db_access['development'] = new SsxDbConfig();
 $this->ssx_db_access['development']->ssx_db_type = 'mysql';
-$this->ssx_db_access['development']->ssx_db_user = '3upjqC6Xk0Ggxlof/V5A6uiQrHTR0ibEin2Be5HPjOU=';
-$this->ssx_db_access['development']->ssx_db_pass = '5qZwXXddkW8M9Ssoa1fDLYJglkfUuh0VpzacBbe+jlc=';
-$this->ssx_db_access['development']->ssx_db_host = 'j8dOzBzqDGvrL4Hux3w2AV8IfxB3/WS1stqr7Y+YVzQ=';
-$this->ssx_db_access['development']->ssx_db_name = 'pvl16fk6CfUwvPMIEmm+x936TtTpRl5GRttNRb8e7u4=';
-$this->ssx_db_access['development']->ssx_hash_key = getenv('SSX_KEY');
-$this->ssx_db_access['development']->ssx_hash_session_key = 'zhoTH9PHq$r06$E3x927BO5$bA$2s74';
+
+// root
+$this->ssx_db_access['development']->ssx_db_user = 'ZjWyv82ga6uSbuVu3GgJkAcYiWnjMZtWpKfjNWknDi8=';
+// (sem senha)
+$this->ssx_db_access['development']->ssx_db_pass = '0E29XFL5gDqQ6WXOteVToy0CP70q1oX6J9VMqOJdKz0=';
+// 127.0.0.1
+$this->ssx_db_access['development']->ssx_db_host = 'VNU/GyJ+bZTrqv0G3CLX9YB1b+ZBVFsPIKwqHNLow30=';
+// ssx
+$this->ssx_db_access['development']->ssx_db_name = 'kx1h8a6LrUHnHnwoZZu0L88hqjkBZz2vt87G+Y35ju4=';
+$this->ssx_db_access['development']->ssx_hash_key = 'ZKZOPqy5WA@94s839oGAh6fDmF3IQ6w3';
+$this->ssx_db_access['development']->ssx_hash_session_key = '2VPrco4bbJlLVaAXq1tI@ar33q]P2d28';
 $this->ssx_db_access['development']->ssx_db_port = 3306;
 
 /**

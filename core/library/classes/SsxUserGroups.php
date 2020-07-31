@@ -27,7 +27,7 @@ class SsxUserGroups extends SsxModels
 	
 	public $prefix = "UG";
 	
-	public function SsxUserGroups()
+	public function __construct()
 	{
 		parent::super();
 	}

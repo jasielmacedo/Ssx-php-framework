@@ -23,7 +23,6 @@ class SsxMail
 	public $sendgrid = false;
 	
 	public function __construct(){ $this->super(); }
-	public function SsxMail(){ $this->super(); }
 	/**
 	 * Metodo chamado pelos contrutores para instanciar o objeto PHPMailer
 	 */

@@ -36,7 +36,7 @@ class SsxUsers extends SsxModels
 	private static $user_permissions;
 	private static $user_rules;
 	
-	public function SsxUsers()
+	public function __construct()
 	{		
 		parent::super();
 	}

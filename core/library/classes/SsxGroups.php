@@ -37,7 +37,7 @@ class SsxGroups extends SsxModels
 	const LEVEL_USER  = "1";
 	const LEVEL_ADMIN = "0";
 	
-	public function SsxGroups()
+	public function __construct()
 	{
 		parent::super();
 	}

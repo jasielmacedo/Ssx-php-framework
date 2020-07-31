@@ -16,6 +16,6 @@
  // define que se trata de um admin
  define('IS_ADMIN', true);
  
- include_once(LOCALPATH . "../../../ssx/core/core.php");
+ include_once(LOCALPATH . "../../core/core.php");
 
  Ssx::shutDown();

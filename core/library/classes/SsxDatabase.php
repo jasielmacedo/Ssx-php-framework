@@ -26,7 +26,7 @@ class SsxDatabase
 	
 	public $queries = array();
 	
-	public function SsxDatabase(SsxHosts $Hosts,$transation=true)
+	public function __construct(SsxHosts $Hosts,$transation=true)
 	{
 		
       	$this->createLink($Hosts);   
